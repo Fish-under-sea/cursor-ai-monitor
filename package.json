@@ -1,0 +1,59 @@
+{
+  "name": "cursor-ai-monitor",
+  "displayName": "Cursor AI Monitor Pro",
+  "description": "实时显示 Cursor AI 正在修改的文件 - 专业版",
+  "version": "0.1.6",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursor-ai-monitor.showDiff",
+        "title": "AI Monitor: 显示文件 Diff"
+      },
+      {
+        "command": "cursor-ai-monitor.showHistory",
+        "title": "AI Monitor: 显示修改历史"
+      },
+      {
+        "command": "cursor-ai-monitor.toggleLog",
+        "title": "AI Monitor: 显示/隐藏监测日志"
+      },
+      {
+        "command": "cursor-ai-monitor.showLog",
+        "title": "AI Monitor: 打开监测日志"
+      },
+      {
+        "command": "cursor-ai-monitor.clearLog",
+        "title": "AI Monitor: 清空日志"
+      },
+      {
+        "command": "cursor-ai-monitor.reset",
+        "title": "AI Monitor: 重置状态"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.105.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
