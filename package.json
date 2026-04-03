@@ -1,8 +1,8 @@
 {
   "name": "cursor-ai-monitor",
   "displayName": "Cursor AI Monitor Pro",
-  "description": "实时显示 Cursor AI 正在修改的文件 - 专业版",
-  "version": "0.1.6",
+  "description": "实时显示 Cursor AI 正在修改的文件 - 专业版（区分用户/Agent操作）",
+  "version": "0.2.1",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.105.0"
@@ -17,12 +17,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "cursor-ai-monitor.showDiff",
-        "title": "AI Monitor: 显示文件 Diff"
+        "command": "cursor-ai-monitor.toggleMode",
+        "title": "AI Monitor: 切换监测模式"
       },
       {
-        "command": "cursor-ai-monitor.showHistory",
-        "title": "AI Monitor: 显示修改历史"
+        "command": "cursor-ai-monitor.startManual",
+        "title": "AI Monitor: 开启手动监测模式"
+      },
+      {
+        "command": "cursor-ai-monitor.stopMonitor",
+        "title": "AI Monitor: 关闭监测（切回安全模式）"
       },
       {
         "command": "cursor-ai-monitor.toggleLog",
@@ -39,6 +43,15 @@
       {
         "command": "cursor-ai-monitor.reset",
         "title": "AI Monitor: 重置状态"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "cursor-ai-monitor.toggleMode",
+        "key": "ctrl+shift+m",
+        "mac": "cmd+shift+m",
+        "when": "editorTextFocus",
+        "description": "切换 AI 监测模式"
       }
     ]
   },
