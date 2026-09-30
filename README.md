@@ -181,7 +181,7 @@ cursor-ai-monitor/
 
 | 项 | 说明 |
 |----|------|
-| **无 LICENSE 文件** | 原有 README 的「许可证 MIT」**缺少文件支撑** —— `package.json` 未声明 `license` 字段，根目录也无 `LICENSE`。若需 MIT 生效，建议补充 `LICENSE` 文件并在 `package.json` 中声明 |
+| **许可** | 已添加 **MIT LICENSE**（根目录 `LICENSE`）。`package.json` 中仍未声明 `license` 字段，可按需补为 `"license": "MIT"` |
 | **未发布到市场** | 仓库内无发布记录，需自行编译或用 VSIX 本地安装 |
 
 ### 关于 `proxy-server.js`（辅助脚本）
