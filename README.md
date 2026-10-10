@@ -10,6 +10,8 @@
 
 ![version](https://img.shields.io/badge/version-0.2.1-3b82f6?style=flat-square) ![VS Code](https://img.shields.io/badge/VS%20Code-%5E1.105.0-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
+**简体中文** · [English](README.en.md)
+
 </div>
 
 ---
